@@ -121,27 +121,27 @@ def main():
 
     # Solicita informações do usuário
     # db_user = input("Digite o nome do usuário para o banco de dados: ")
-    # db_user = 'user_app'
+    db_user = 'user_app'
     while True:
-        db_user = input("Digite o nome do usuário para o banco de dados: ").strip()
+        # db_user = input("Digite o nome do usuário para o banco de dados: ").strip()
         error = validate_mysql_user(db_user)
         if error:
             print(f"Erro: {error}")
         else:
             break
     # db_password = input("Digite a senha para o usuário: ")
-    # db_password = 'Senha@123'
+    db_password = 'Senha@123'
     while True:
-        db_password = input("Digite a senha para o usuário: ").strip()
+        # db_password = input("Digite a senha para o usuário: ").strip()
         error = validate_mysql_password(db_password)
         if error:
             print(f"Erro: {error}")
         else:
             break
     # db_name = input("Digite o nome do banco de dados: ")
-    # db_name = 'db_app'
+    db_name = 'db_app'
     while True:
-        db_name = input("Digite o nome do banco de dados: ").strip()
+        # db_name = input("Digite o nome do banco de dados: ").strip()
         error = validate_mysql_db_name(db_name)
         if error:
             print(f"Erro: {error}")
